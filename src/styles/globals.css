@@ -123,3 +123,19 @@
     @apply bg-background text-foreground;
   }
 }
+
+.glow{
+  background-color: transparent;
+  transition-duration: 500ms;
+  box-shadow: none;
+  color:#ffffff;
+  cursor:pointer;
+}
+
+.glow:hover{
+  background-color: #00aeeb;
+  transition-duration: 500ms;
+  box-shadow: 0 0 20px 20px #00116e;
+  color:#080414;
+  border:2px solid #00aeeb;
+}
