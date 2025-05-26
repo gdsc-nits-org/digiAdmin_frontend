@@ -1,3 +1,3 @@
 import * as Home from "./home";
-
-export {Home};
+import * as Dashboard from "./dashboard";
+export {Home,Dashboard};
