@@ -7,8 +7,8 @@ const Login: React.FC = () => {
                 <p className="">
                     Welcome to DigiAdmin! 🚀
 
-                    You're currently logged out — but you're just one step away from unlocking a smarter way to work.
-                    Log in with your authorized account to access a powerful suite of tools designed to simplify your administrative workflow. Whether you're managing schedules, organizing documents, coordinating teams, or generating reports — DigiAdmin puts everything you need in one intuitive dashboard.
+                    You&apos;re currently logged out — but you&apos;re just one step away from unlocking a smarter way to work.
+                    Log in with your authorized account to access a powerful suite of tools designed to simplify your administrative workflow. Whether you&apos;re managing schedules, organizing documents, coordinating teams, or generating reports — DigiAdmin puts everything you need in one intuitive dashboard.
 
                     No more juggling platforms or wasting time on repetitive tasks. With DigiAdmin, you stay in control, focused, and ahead of the game.
 
