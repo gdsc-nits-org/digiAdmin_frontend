@@ -139,3 +139,20 @@
   color:#080414;
   border:2px solid #00aeeb;
 }
+
+
+.glowlogin{
+  background-color: #00a6ff;
+  transition-duration: 500ms;
+  box-shadow: none;
+  cursor:pointer;
+  font-weight: 600;
+}
+
+.glowlogin:hover{
+  background-color: #85deff;
+  transition-duration: 500ms;
+  box-shadow: 0 0 10px 10px #8e9fff79;
+  color:#080414;
+  font-weight: 700;
+}
