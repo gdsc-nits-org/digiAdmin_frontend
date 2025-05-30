@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import * as components from "../../components"; // assuming Card is exported from components/Dashboard/Card.tsx
-
+import * as components from "../../components";
 interface User {
     id: string;
     email: string;
