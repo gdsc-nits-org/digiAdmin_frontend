@@ -4,6 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "prepare": "husky install",
     "build": "next build",
     "check": "next lint && tsc --noEmit",
     "dev": "next dev --turbo",
@@ -24,6 +25,9 @@
     "next": "^14.2.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "firebase": "^11.8.1",
+    "husky": "^9.1.7",
+    "react-firebase-hooks": "^5.1.1",
     "tailwind-merge": "^3.3.0",
     "zod": "^3.24.2"
   },

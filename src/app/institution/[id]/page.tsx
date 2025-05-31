@@ -5,7 +5,7 @@ interface PageProps {
     id: string;
   };
 }
-
+export const runtime = "edge";
 const Institute = ({ params }: PageProps) => {
   const { id } = params;
 
