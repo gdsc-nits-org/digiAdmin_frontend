@@ -1,12 +1,6 @@
 
 import React from "react";
-
-interface PageProps {
-  params: {
-    id: string;
-  };
-}
-
+import type { PageProps } from "~/types/dynamicurl";
 const Institute = ({ params }: PageProps) => {
   const { id } = params;
 
