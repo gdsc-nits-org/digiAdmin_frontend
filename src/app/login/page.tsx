@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import { useSignInWithGoogle, useAuthState } from "react-firebase-hooks/auth";
 import {auth} from "../../lib/firebase";
 const Login: React.FC = () => {

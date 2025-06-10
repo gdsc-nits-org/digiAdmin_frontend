@@ -1,8 +1,8 @@
 import * as components from "../components";
 export default function HomePage() {
   return (
-    <main className="bg-[#080414] min-h-screen text-[#ffffff]">
-      <components.Home.Hero/>
+    <main className="min-h-screen bg-[#080414] text-[#ffffff]">
+      <components.Home.Hero />
     </main>
   );
 }
