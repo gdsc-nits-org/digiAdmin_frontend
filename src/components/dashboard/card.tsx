@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import Link from "next/link";
 interface User {
   id: string;
@@ -36,6 +35,11 @@ const Card: React.FC<Institution> = ({
         <h3>{city}</h3>
         <h3>{state}</h3>
         <h3>{pinCode}</h3>
+        {admins.map((item)=>(
+          <>
+            {item.name}
+          </>
+        ))}
       </div>
     </Link>
   );

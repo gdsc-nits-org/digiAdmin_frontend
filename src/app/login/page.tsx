@@ -1,9 +1,18 @@
 "use client";
 import { useSignInWithGoogle, useAuthState } from "react-firebase-hooks/auth";
 import {auth} from "../../lib/firebase";
+import { useEffect } from "react";
+import { useRouter } from 'next/navigation';
 const Login: React.FC = () => {
     const [signInWithGoogle] = useSignInWithGoogle(auth);
     const [_user] = useAuthState(auth);
+    const router = useRouter();
+
+    useEffect(()=>{
+        if(_user){
+            router.push('/dashboard');
+        }
+    },[_user,router]);
     return (
         <div className="flex flex-col items-center justify-center bg-[#080414] text-[#ffffff] min-h-screen">
             <div className="flex flex-col gap-8 items-center justify-center bg-[#5e5ef44a] p-10 rounded-4xl border-2 w-[90%] md:w-[70%] lg:w-[50%]">
