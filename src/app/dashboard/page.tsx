@@ -56,7 +56,7 @@ const Dashboard = () => {
   console.log(_user);
   return (
     <div className="flex min-h-screen flex-col items-center justify-center gap-10 bg-[#080414] p-10 text-[#ffffff]">
-      <p className="text-center text-4xl md:text-8xl">Welcome {_user!.displayName}</p>
+      <p className="text-center text-4xl md:text-8xl">Welcome {_user ? _user.displayName : "John Doe"}</p>
       <div className="flex w-full max-w-6xl flex-wrap items-center justify-center gap-6">
         {dummyInstitutions.map((institution) => (
           <components.Dashboard.Card key={institution.id} {...institution} />
