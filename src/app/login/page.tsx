@@ -3,12 +3,17 @@ import { useSignInWithGoogle, useAuthState } from "react-firebase-hooks/auth";
 import {auth} from "../../lib/firebase";
 import { useEffect } from "react";
 import { useRouter } from 'next/navigation';
+import { env } from "~/env";
+import axios from "axios";
 const Login: React.FC = () => {
     const [signInWithGoogle] = useSignInWithGoogle(auth);
     const [_user] = useAuthState(auth);
     const router = useRouter();
 
     useEffect(()=>{
+        async function fetchUser(){
+            const userData=await axios.get(`${env.NEXT_PUBLIC_API_URL}/user/me`);
+        }
         if(_user){
             router.push('/dashboard');
         }
